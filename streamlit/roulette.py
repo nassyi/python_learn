@@ -21,8 +21,8 @@ left_column, right_column = st.columns(2)
 items = items.split(",")
 
 if items:
-    l_button = left_column.button("ルーレットを回す")
-    r_button = right_column.button("ルーレットを止める")
+    l_button = left_column.button("ルーレット START!")
+    r_button = right_column.button("ルーレット STOP!")
     while l_button:
         ret = random.choice(items)
         placeHolder.text(f'{r_f_str}「{ret}」{r_e_str}') 
