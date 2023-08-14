@@ -4,8 +4,8 @@ import time
 
 # ルーレットの項目を入力する
 r_name = st.sidebar.text_input('タイトルを入力してください')
-r_f_str = st.sidebar.text_input('前の文章')
-r_e_str = st.sidebar.text_input('後の文章')
+r_f_str = st.sidebar.text_input('前の文章を入力してください')
+r_e_str = st.sidebar.text_input('後の文章を入力してください')
 items = st.sidebar.text_input("ルーレットの項目をカンマで区切って入力してください(例：AAA,BBB,CCC)")
 
 
