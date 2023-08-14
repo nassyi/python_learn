@@ -4,8 +4,8 @@ import time
 
 # ルーレットの項目を入力する
 r_name = st.sidebar.text_input('タイトルを入力してください')
-r_f_str = st.sidebar.text_input('前の文章')
-r_e_str = st.sidebar.text_input('後の文章')
+r_f_str = st.sidebar.text_input('前の文章を入力してください')
+r_e_str = st.sidebar.text_input('後の文章を入力してください')
 items = st.sidebar.text_input("ルーレットの項目をカンマで区切って入力してください(例：AAA,BBB,CCC)")
 
 
@@ -21,8 +21,8 @@ left_column, right_column = st.columns(2)
 items = items.split(",")
 
 if items:
-    l_button = left_column.button("ルーレットを回す")
-    r_button = right_column.button("ルーレットを止める")
+    l_button = left_column.button("ルーレット START!")
+    r_button = right_column.button("ルーレット STOP!")
     while l_button:
         ret = random.choice(items)
         placeHolder.text(f'{r_f_str}「{ret}」{r_e_str}') 
